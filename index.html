@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:900|Titillium+Web|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/raxraj/colorify/src/minified/colorify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Udbhav 2020</title>
+  </head>
+  <body>
+    <div class="landing text-center">
+        <div class="logo_top mt-0">
+            <h2 class="text-danger" data-aos="fade-down" data-aos-delay="1000">
+                <img src="./images/logo.png" height="40px" alt="" srcset="">
+                INDERPRASTHA ENGINEERING COLLEGE
+            </h2>
+            <h3 class="text-danger mb-4" data-aos="fade-down" data-aos-delay="1000">
+                presents
+            </h3>
+            <img src="./images/udbhav_logo.png" data-aos="fade-down" data-aos-delay="1000" style="width: 400px;" alt="" srcset="">
+        </div>
+        
+            <h3 class="text-danger" data-aos="fade-down" data-aos-delay="1000">Inter-college cultural fiesta</h3>
+            <br>
+        <div class="display-5 text-danger " data-aos="fade-down" data-aos-delay="1000">
+            20-21<sup>st</sup> March, 2020
+        </div>
+        
+            
+        <div class="countdown mx-auto text-center" data-aos="fade-up" data-aos-delay="1000">
+            <div class="circle text-center" >
+                <span id="days">
+                    00
+                </span>
+                <div class="text">
+                    Days
+                </div>
+            </div>
+            <div class="circle text-center cy-bg-mt-white "  >
+                <span id="hr">
+                    
+                </span>
+                <div class="text">
+                    Hours
+                </div>
+            </div>
+            <div class="circle text-center "  >
+                <span id="min">
+                    
+                </span>
+                <div class="text">
+                    Min
+                </div>
+            </div>
+            <div class="circle text-center "  >
+                <span id="sec">
+                    
+                </span>
+                <div class="text">
+                    Sec
+                </div>
+            </div>
+        </div>
+        <h3 class="text-danger" data-aos="fade-up" data-aos-delay="1000">The countdown has begun.</h3>
+        <div class="text-center mt-5">
+            <div>
+                <a href="https://www.facebook.com/ipec30" target="_blank" class="btn btn-danger btn-lg btn-update">
+                    For more updates, follow @ipec30
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Mar 20, 2020 10:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById('days').innerHTML = days
+          document.getElementById('hr').innerHTML = hours
+          document.getElementById('min').innerHTML = minutes
+          document.getElementById('sec').innerHTML = seconds
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+      </script>
+  </body>
+</html>

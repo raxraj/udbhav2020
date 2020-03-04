@@ -1,0 +1,53 @@
+.landing{
+    background-image: url('../images/bg_udbhav.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 0 -10vh ;
+    overflow-x: hidden;
+}
+
+.logo_top{
+    margin-top:2vh !important ;
+}
+.countdown{
+    position: relative;
+    color: white;
+}
+.circle{
+    /* box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 20px 30px 0 rgba(0, 0, 0, 0.6); */
+    display: inline-block;
+    margin: 0.8vw;
+    padding: 0;
+    font-size: 6.5em;
+    color: black;
+    font-family: 'Kanit';
+    font-weight: 1000 !important;
+}
+.text{
+    font-size: 0.3em;
+    font-family: 'Titillium Web';
+}
+#days{
+    color: #E85032;
+}
+#hr{
+    color: #33E337;
+}
+#min{
+    color: #E5097F;
+}
+#sec{
+    color: #0048FF;
+}
+.btn-update{
+    font-size: 1.5em;
+}
+h2{
+    color: #FB0B07 !important;
+    font-family: 'Montserrat' !important;
+    font-weight: bold;
+}
+.display-5{
+    font-size: 3.0em;
+    font-weight: bold;
+}
